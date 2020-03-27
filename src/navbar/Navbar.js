@@ -20,7 +20,7 @@ class Navbar extends React.Component {
             activeStyle={{
                 background: 'pink'
             }}
-            >Home<</NavLink>
+            >Home</NavLink>
         </div>
     }
 }
