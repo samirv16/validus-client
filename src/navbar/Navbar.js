@@ -22,6 +22,30 @@ class Navbar extends React.Component {
                 background: 'pink'
             }}
             >Home</NavLink>
+            <NavLink
+            to="/workouts"
+            exact
+            style={link}
+            activeStyle={{
+                background: 'pink'
+            }}
+            >Workouts</NavLink>
+            <NavLink
+            to="/workouts/new"
+            exact
+            style={link}
+            activeStyle={{
+                background: 'pink'
+            }}
+            >New Workout</NavLink>
+            <NavLink
+            to="/about"
+            exact
+            style={link}
+            activeStyle={{
+                background: 'pink'
+            }}
+            >About</NavLink>
         </div>
         )
     }
