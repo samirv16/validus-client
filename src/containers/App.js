@@ -13,6 +13,9 @@ function App() {
         <div>
           <Navbar/>
             <Route exact path='/' component={Home}/>
+            <Route exact path='/workouts' component={Workouts}/>
+            <Route exact path='/workouts/new' component={WorkoutForm}/>
+            <Route exact path='/about' component={About}/>
         </div>
     </Router>
   )
