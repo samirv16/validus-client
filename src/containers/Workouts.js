@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Workouts = () => {
-    return (
-        <div>
-            <h1>See Workouts below!</h1>
-        </div>
-    )
+class Workouts extends React.Component {
+    render() {
+        return <h1>See Workouts below!</h1>
+    }
 }
 
 export default Workouts
