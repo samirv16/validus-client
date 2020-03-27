@@ -12,7 +12,16 @@ const link = {
 
 class Navbar extends React.Component {
     render() {
-        
+        <div>
+            <NavLink
+            to="/"
+            exact
+            style={link}
+            activeStyle={{
+                background: 'pink'
+            }}
+            >Home<</NavLink>
+        </div>
     }
 }
 
