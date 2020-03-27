@@ -10,4 +10,10 @@ const link = {
     color: 'black',
 }
 
+class Navbar extends React.Component {
+    render() {
+        
+    }
+}
+
 export dafault Navbar
