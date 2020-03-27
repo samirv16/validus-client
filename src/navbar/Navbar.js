@@ -12,6 +12,7 @@ const link = {
 
 class Navbar extends React.Component {
     render() {
+        return(
         <div>
             <NavLink
             to="/"
@@ -22,7 +23,8 @@ class Navbar extends React.Component {
             }}
             >Home</NavLink>
         </div>
+        )
     }
 }
 
-export dafault Navbar
+export default Navbar
