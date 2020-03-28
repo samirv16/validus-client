@@ -4,7 +4,7 @@ import Home from './Home'
 import Workouts from './Workouts'
 import WorkoutForm from './WorkoutForm'
 import About from './About'
-import Navbar from '../navbar/Navbar'
+import Navbar from '../components/Navbar'
 import './App.css';
 
 function App() {
