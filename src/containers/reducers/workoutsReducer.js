@@ -6,7 +6,8 @@ export default(state= [], action) => {
         case "ADD_WORKOUT":
             return [...state, action.payload]
         case "REMOVE_WOKOUT":
-            
+            let newWorkouts = state.filter(workout => workout.id !== action.payload)
+            return [...newWorkouts]
         default:
             return state
     }
