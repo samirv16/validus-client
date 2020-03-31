@@ -24,8 +24,27 @@ export class WorkoutNew extends Component {
         //add workout
         this.props.addWorkout(this.state);
         //add redirect to /workouts
-        this.props.history.push('/pets');
+        this.props.history.push('/workouts');
     }
+
+    render() {
+        return (
+          <form onSubmit={ this.handleSubmit }>
+            <h3>Create Workout</h3>
+            <div className="input-field">
+              <input type="text" name="name" id="name" value={ this.state.name } onChange={ this.handleChange }/>
+              <label htmlFor="name">Workout Name</label>
+            </div>
+            <div className="input-field">
+              <textarea type="text" name="body" id="body" value={ this.state.body } onChange={ this.handleChange }/>
+              <label htmlFor="body">Workout Description</label>
+            </div>
+    
+            <input type="submit" value="Create Workout" className="btn" />
+          </form>
+        )
+      }
+
 }
 
-export default WorkoutNew
+export default connect(null, { addWorkout })(WorkoutNew)
