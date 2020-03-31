@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const WorkoutItem = ({ workout }) => {
     return (
-        <li>
+        <li className="collection-item">
             Workout Name: {workout.name}<br/>
             Description: {workout.body}<br/>
             <Link to={`/workouts/${workout.id}`}>View</Link>
