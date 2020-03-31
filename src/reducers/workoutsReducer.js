@@ -1,4 +1,4 @@
-export default(state= [{name:"machine", body:"pushups", rounds: 5}], action) => {
+export default(state= [], action) => {
     switch(action.type) {
         case "SET_WORKOUT":
             return [...action.payload]
