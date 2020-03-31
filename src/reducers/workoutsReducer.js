@@ -1,16 +1,9 @@
-let id = 0
-
 export default(state= [{name:"machine", body:"pushups"}], action) => {
-    const newWorkout = () => {
-        return {
-            ...action.payload,
-          id: id++  
-        }
-    }
-
     switch(action.type) {
+        case "SET_WORKOUT":
+            return [...action.payload]
         case "ADD_WORKOUT":
-            return [...state, newWorkout]
+            return [...state, action.payload]
         case "REMOVE_WOKOUT":
             let newWorkouts = state.filter(workout => workout.id !== action.payload)
             return [...newWorkouts]
