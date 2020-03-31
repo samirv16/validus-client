@@ -1,6 +1,6 @@
 export default(state= [], action) => {
     switch(action.type) {
-        case "SET_WORKOUT":
+        case "SET_WORKOUTS":
             return [...action.payload]
         case "ADD_WORKOUT":
             return [...state, action.payload]

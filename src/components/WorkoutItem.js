@@ -1,15 +1,16 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { connect } from 'react-redux'
+import { removeWorkout } from '../actions/index'
 
-const WorkoutItem = ({ workout }) => {
+const WorkoutItem = ({ workout, removeWorkout }) => {
     return (
-        <li className="collection-item">
-            Workout Name: {workout.name}<br/>
-            Description: {workout.body}<br/>
-            Rounds: {workout.rounds}<br/>
-            <Link to={`/workouts/${workout.id}`}>View</Link>
-        </li>
-    )
+    <li className="collection-item">
+      Workout Name: {workout.name}<br />
+      Description: { workout.body } <br />
+      Rounds: { workout.rounds } <br />
+      <button onClick={()=>removeWorkout(workout.id)}>Remove Workout?</button>
+    </li>
+    );
 }
 
-export default WorkoutItem
+export default connect (null, { removeWorkout })(WorkoutItem)
