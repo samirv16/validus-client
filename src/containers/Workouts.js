@@ -8,7 +8,7 @@ export class Workouts extends Component {
         return (
             <div>
                 <h2>Workout List</h2>
-                <ul>
+                <ul className="collection">
                     {workouts}
                 </ul>
             </div>
