@@ -19,7 +19,13 @@ export class WorkoutNew extends Component {
         })
     }
 
-    
+    handleSubmit = event => {
+        event.preventDefault();
+        //add workout
+        this.props.addWorkout(this.state);
+        //add redirect to /workouts
+        this.props.history.push('/pets');
+    }
 }
 
 export default WorkoutNew
