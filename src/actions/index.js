@@ -12,7 +12,10 @@ export const removeWorkout = workoutId => {
 
 export const fetchWorkouts = () = {
     return (dispatch) => {
-        return fetch('http://localhost:3000/pets')
+        return fetch('http://localhost:3000/workouts')
         .then(resp => resp.json())
+        .then(workouts => {
+            dispatch({type: "SET_WORKOUTS", payload: workouts})
+        })
     }
 }
