@@ -20,7 +20,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route exact path='/workouts' component={Workouts}/>
-            <Route exact path='/workouts/new' render={ props => <WorkoutNew {...props} addWorkout={this.addWorkout} />} />
+            <Route exact path="/workouts/new" render={ props => <WorkoutNew {...props} addWorkout={this.addWorkout} /> } />
             <Route exact path='/about' component={About}/>
           </Switch>
         </div>
