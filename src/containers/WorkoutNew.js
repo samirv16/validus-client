@@ -10,6 +10,7 @@ export class WorkoutNew extends Component {
         this.state = {
             name: '',
             body: '',
+            rounds: '',
         }
     }
 
@@ -38,6 +39,10 @@ export class WorkoutNew extends Component {
             <div className="input-field">
               <textarea type="text" name="body" id="body" value={ this.state.body } onChange={ this.handleChange }/>
               <label htmlFor="body">Workout Description</label>
+            </div>
+            <div className="input-field">
+              <input type="integer" name="rounds" id="rounds" value={ this.state.rounds } onChange={ this.handleChange }/>
+              <label htmlFor="rounds">Rounds</label>
             </div>
     
             <input type="submit" value="Create Workout" className="btn" />

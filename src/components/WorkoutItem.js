@@ -6,6 +6,7 @@ const WorkoutItem = ({ workout }) => {
         <li className="collection-item">
             Workout Name: {workout.name}<br/>
             Description: {workout.body}<br/>
+            Rounds: {workout.rounds}<br/>
             <Link to={`/workouts/${workout.id}`}>View</Link>
         </li>
     )
