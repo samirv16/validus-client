@@ -16,4 +16,10 @@ export class Workouts extends Component {
     }
 }
 
-export default Workouts
+const mapStateToProps = state => {
+    return {
+      workouts: state.workouts
+    }
+  }
+
+  export default connect(mapStateToProps)(Workouts)
