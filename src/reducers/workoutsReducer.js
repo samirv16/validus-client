@@ -1,6 +1,6 @@
 let id = 0
 
-export default(state= [], action) => {
+export default(state= [{name:"machine", body:"pushups"}], action) => {
     const newWorkout = () => {
         return {
             ...action.payload,
