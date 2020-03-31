@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {addWorkout} from '../actions/index'
 import {connect} from 'react-redux'
 
-export class WorkoutNew extends Component [
+export class WorkoutNew extends Component {
 
     constructor(props) {
         super(props)
@@ -12,6 +12,14 @@ export class WorkoutNew extends Component [
             body: '',
         }
     }
-]
+
+    handleChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    
+}
 
 export default WorkoutNew
