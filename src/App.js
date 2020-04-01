@@ -6,6 +6,7 @@ import WorkoutNew from './containers/WorkoutNew'
 import About from './containers/About'
 import Navbar from './components/Navbar'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   // constructor() {

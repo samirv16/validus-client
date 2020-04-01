@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import WorkoutItem from '../components/WorkoutItem'
 import {connect} from 'react-redux'
 import {fetchWorkouts} from '../actions/index'
+import Card from 'react-bootstrap/Card'
 
 
 export class Workouts extends Component {
@@ -13,12 +14,9 @@ export class Workouts extends Component {
     render() {
         const workouts = this.props.workouts.map(( workout, i) => <WorkoutItem key={i} workout={workout} />)
         return (
-            <div>
-                <h2>Workout List</h2>
-                <ol className="collection">
-                    {workouts}
-                </ol>
-            </div>
+            <Card style={{ opacity: 0.3 }}>
+                <Card.Body>{workouts}</Card.Body>
+            </Card>
         )
     }
 }

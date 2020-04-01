@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import {NavLink} from 'react-router-dom';
+import {NavLink} from 'react-router-dom'
+import Nav from 'react-bootstrap/Nav'
 
 const link = {
     width: '100px',
@@ -13,16 +14,14 @@ const link = {
 export class Navbar extends Component {
     render() {
         return(
-        <nav className="indigo darken-3">
-            <div>
-                <NavLink to="/" className="brand-logo" exact style={link} activeStyle={{ background: 'pink' }}>Home</NavLink>
-                    <ul className="right">
+        <Nav variant="tabs" className="justify-content-end">
+                <NavLink to="/" exact style={link} activeStyle={{ background: 'pink' }}>Home</NavLink>
+                    {/* <Nav.Item className="justify-content-end" as="ul"> */}
                         <NavLink to="/workouts" exact style={link} activeStyle={{background: 'pink'}}>Workouts</NavLink>
                         <NavLink to="/workouts/new" exact style={link} activeStyle={{ background: 'pink' }}>New Workout</NavLink>
                         <NavLink to="/about" exact style={link} activeStyle={{ background: 'pink' }}>About</NavLink>
-                    </ul>
-            </div>
-        </nav>
+                    {/* </Nav.Item> */}
+        </Nav>
         )
     }
 }
