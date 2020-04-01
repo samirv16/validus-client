@@ -1,5 +1,5 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom'
+import React, {Component} from 'react'
+import {NavLink} from 'react-router-dom';
 
 const link = {
     width: '100px',
@@ -10,43 +10,19 @@ const link = {
     color: 'black',
 }
 
-class Navbar extends React.Component {
+export class Navbar extends Component {
     render() {
         return(
-        <div>
-            <NavLink
-            to="/"
-            exact
-            style={link}
-            activeStyle={{
-                background: 'pink'
-            }}
-            >Home</NavLink>
-            <NavLink
-            to="/workouts"
-            exact
-            style={link}
-            activeStyle={{
-                background: 'pink'
-            }}
-            >Workouts</NavLink>
-            <NavLink
-            to="/workouts/new"
-            exact
-            style={link}
-            activeStyle={{
-                background: 'pink'
-            }}
-            >New Workout</NavLink>
-            <NavLink
-            to="/about"
-            exact
-            style={link}
-            activeStyle={{
-                background: 'pink'
-            }}
-            >About</NavLink>
-        </div>
+        <nav className="indigo darken-3">
+            <div>
+                <NavLink to="/" className="brand-logo" exact style={link} activeStyle={{ background: 'pink' }}>Home</NavLink>
+                    <ul className="right">
+                        <NavLink to="/workouts" exact style={link} activeStyle={{background: 'pink'}}>Workouts</NavLink>
+                        <NavLink to="/workouts/new" exact style={link} activeStyle={{ background: 'pink' }}>New Workout</NavLink>
+                        <NavLink to="/about" exact style={link} activeStyle={{ background: 'pink' }}>About</NavLink>
+                    </ul>
+            </div>
+        </nav>
         )
     }
 }
