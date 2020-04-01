@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import {addWorkout} from '../actions/index'
 import {connect} from 'react-redux'
+import Form from 'react-bootstrap/Form'
+import Card from 'react-bootstrap/Card'
 
 export class WorkoutNew extends Component {
 
@@ -30,23 +32,25 @@ export class WorkoutNew extends Component {
 
     render() {
         return (
-          <form onSubmit={ this.handleSubmit }>
+          <Card style={{ opacity: 0.5 }}>
+          <Form onSubmit={ this.handleSubmit }>
             <h3>Create Workout</h3>
-            <div className="input-field">
-              <input type="text" name="name" id="name" value={ this.state.name } onChange={ this.handleChange }/>
-              <label htmlFor="name">Workout Name</label>
-            </div>
-            <div className="input-field">
-              <textarea type="text" name="body" id="body" value={ this.state.body } onChange={ this.handleChange }/>
-              <label htmlFor="body">Workout Description</label>
-            </div>
-            <div className="input-field">
-              <input type="integer" name="rounds" id="rounds" value={ this.state.rounds } onChange={ this.handleChange }/>
-              <label htmlFor="rounds">Rounds</label>
-            </div>
+            <Form.Group  controlId="exampleForm.ControlInput1">
+              <Form.Control type="text" name="name" id="name" value={ this.state.name } onChange={ this.handleChange }/>
+              <Form.Label htmlFor="name">Workout Name</Form.Label>
+            </Form.Group>
+            <Form.Group  controlId="exampleForm.ControlInput1">
+              <Form.Control type="text" name="body" id="body" value={ this.state.body } onChange={ this.handleChange }/>
+              <Form.Label htmlFor="body">Workout Description</Form.Label>
+              </Form.Group>
+            <Form.Group  controlId="exampleForm.ControlInput1">
+              <Form.Control type="integer" name="rounds" id="rounds" value={ this.state.rounds } onChange={ this.handleChange }/>
+              <Form.Label htmlFor="rounds">Rounds</Form.Label>
+              </Form.Group>
     
             <input type="submit" value="Create Workout" className="btn" />
-          </form>
+          </Form>
+          </Card>
         )
       }
 
