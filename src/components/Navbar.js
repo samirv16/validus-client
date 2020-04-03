@@ -16,11 +16,9 @@ export class Navbar extends Component {
         return(
         <Nav variant="tabs" className="justify-content-center" style={{fontSize: 12}}>
                 <NavLink to="/" exact style={link} activeStyle={{ background: 'pink' }}>Home</NavLink>
-                    {/* <Nav.Item className="justify-content-end" as="ul"> */}
-                        <NavLink to="/workouts" exact style={link} activeStyle={{background: 'pink'}}>Workouts</NavLink>
-                        <NavLink to="/workouts/new" exact style={link} activeStyle={{ background: 'pink' }}>New Workout</NavLink>
-                        <NavLink to="/about" exact style={link} activeStyle={{ background: 'pink' }}>About</NavLink>
-                    {/* </Nav.Item> */}
+                <NavLink to="/workouts" exact style={link} activeStyle={{background: 'pink'}}>Workouts</NavLink>
+                <NavLink to="/workouts/new" exact style={link} activeStyle={{ background: 'pink' }}>New Workout</NavLink>
+                <NavLink to="/about" exact style={link} activeStyle={{ background: 'pink' }}>About</NavLink>
         </Nav>
         )
     }
