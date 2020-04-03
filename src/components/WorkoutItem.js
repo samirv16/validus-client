@@ -20,4 +20,7 @@ const WorkoutItem = ({ workout, removeWorkout }) => {
     );
 }
 
+//arrow function for the button so it doesnt fire off immidiately
+
+//null bc we dont have mapstatetoprops
 export default connect (null, { removeWorkout })(WorkoutItem)
