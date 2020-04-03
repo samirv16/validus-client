@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Home from './containers/Home'
+import Home from './components/Home'
 import Workouts from './containers/Workouts'
 import WorkoutNew from './containers/WorkoutNew'
-import About from './containers/About'
+import About from './components/About'
 import Navbar from './components/Navbar'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
