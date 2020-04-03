@@ -6,7 +6,7 @@ import Text from './Text'
 class About extends React.Component {
     render() {
         return(
-
+            <Text/>
         )
     }
 }
