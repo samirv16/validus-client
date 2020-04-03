@@ -15,7 +15,7 @@ const  Text = () =>
             That is why we have developed a free solution to manage your<br></br><br></br>
             workouts at home. Instead of repeating the same workout videos, <br></br><br></br>
             you can manage your own variety of workouts using our <br></br><br></br>
-            simple to use website. We believe Validus (Latin word meaning strong), <br></br><br></br>
+            simple to use website. We believe Validus (Latin), <br></br><br></br>
             will not only help you gain physical strength, but give you a strong grip<br></br><br></br>
             on a manageable and unique at home fitness routine.<br></br><br></br>
             </h3>
