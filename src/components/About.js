@@ -3,13 +3,9 @@ import Text from './Text'
 
 
 
-class About extends React.Component {
-    render() {
-        return(
-            <Text/>
-        )
-    }
-}
+const About = () =>
+    <Text/>
+
 
 
 export default About
