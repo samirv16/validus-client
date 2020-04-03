@@ -11,17 +11,14 @@ const link = {
     color: 'white',
 }
 
-export class Navbar extends Component {
-    render() {
-        return(
+const Navbar = () =>
         <Nav variant="tabs" className="justify-content-center" style={{fontSize: 18}}>
                 <NavLink to="/" exact style={link} activeStyle={{ background: 'pink' }}>Home</NavLink>
                 <NavLink to="/workouts" exact style={link} activeStyle={{background: 'pink'}}>Workouts</NavLink>
                 <NavLink to="/workouts/new" exact style={link} activeStyle={{ background: 'pink' }}>New Workout</NavLink>
                 <NavLink to="/about" exact style={link} activeStyle={{ background: 'pink' }}>About</NavLink>
         </Nav>
-        )
-    }
-}
+ 
+    
 
 export default Navbar
