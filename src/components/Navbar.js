@@ -14,7 +14,7 @@ const link = {
 export class Navbar extends Component {
     render() {
         return(
-        <Nav variant="tabs" className="justify-content-end">
+        <Nav variant="tabs" className="justify-content-center" style={{fontSize: 12}}>
                 <NavLink to="/" exact style={link} activeStyle={{ background: 'pink' }}>Home</NavLink>
                     {/* <Nav.Item className="justify-content-end" as="ul"> */}
                         <NavLink to="/workouts" exact style={link} activeStyle={{background: 'pink'}}>Workouts</NavLink>

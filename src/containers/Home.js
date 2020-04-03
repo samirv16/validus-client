@@ -1,12 +1,14 @@
 import React from 'react'
+import Carousel from 'react-bootstrap/Carousel'
 
 
 class Home extends React.Component {
     render() {
         return (
-        <div>
-            <h1>Home</h1>
+        <div class="text-white" >
+            <h1 style={{fontSize: 50}}>Welcome to Validus!</h1>
         </div>
+
         )
     }
 }

@@ -14,8 +14,9 @@ export class Workouts extends Component {
     render() {
         const workouts = this.props.workouts.map(( workout, i) => <WorkoutItem key={i} workout={workout} />)
         return (
-            <Card style={{ opacity: 0.3 }}>
-                <Card.Body>{workouts}</Card.Body>
+            <Card className="text-center" style={{ opacity: 0.5 }}>
+                <Card.Header><h1>Workout List</h1></Card.Header>
+                <Card.Body style={{fontSize: 15}}>{workouts}</Card.Body>
             </Card>
         )
     }

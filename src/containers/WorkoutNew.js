@@ -32,23 +32,24 @@ export class WorkoutNew extends Component {
 
     render() {
         return (
-          <Card style={{ opacity: 0.5 }}>
-          <Form onSubmit={ this.handleSubmit }>
-            <h3>Create Workout</h3>
-            <Form.Group  controlId="exampleForm.ControlInput1">
+          <Card style={{ opacity: 0.5 }} >
+          <Form onSubmit={ this.handleSubmit } style={{fontSize: 15}}>
+            <h1>Create Workout</h1>
+            <Form.Group  controlId="exampleForm.ControlInput1" >
               <Form.Control type="text" name="name" id="name" value={ this.state.name } onChange={ this.handleChange }/>
               <Form.Label htmlFor="name">Workout Name</Form.Label>
             </Form.Group>
             <Form.Group  controlId="exampleForm.ControlInput1">
               <Form.Control type="text" name="body" id="body" value={ this.state.body } onChange={ this.handleChange }/>
               <Form.Label htmlFor="body">Workout Description</Form.Label>
-              </Form.Group>
+            </Form.Group>
             <Form.Group  controlId="exampleForm.ControlInput1">
               <Form.Control type="integer" name="rounds" id="rounds" value={ this.state.rounds } onChange={ this.handleChange }/>
               <Form.Label htmlFor="rounds">Rounds</Form.Label>
-              </Form.Group>
-    
-            <input type="submit" value="Create Workout" className="btn" />
+            </Form.Group>
+            <Form.Group >
+            <Form.Control type="submit" value="Create Workout" className="btn" style={{fontSize: 25}} />
+            </Form.Group>
           </Form>
           </Card>
         )
