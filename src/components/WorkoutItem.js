@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card'
 
 const WorkoutItem = ({ workout, removeWorkout }) => {
     return (
-      <Card className="text-center" border="danger" >
+      <Card className="text-center" border="info" >
           <Card.Body >
             <Card.Title style={{fontSize: 20}}>Workout Name: {workout.name}</Card.Title>
               <Card.Text>
