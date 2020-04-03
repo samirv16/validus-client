@@ -1,10 +1,14 @@
 import React from 'react'
 
+const link = {
+    color: 'pink',
+  }
+
 
 class About extends React.Component {
     render() {
         return (
-        <div class="text-white font-italic" >
+        <div class="font-italic" style={link}>
             <h1 class="font-weight-bold">About Us</h1><br></br><br></br>
             <h3>
             There are times in life getting to the gym isn't realistic. <br></br><br></br>

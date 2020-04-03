@@ -3,10 +3,12 @@ import { connect } from 'react-redux'
 import { removeWorkout } from '../actions/index'
 import Card from 'react-bootstrap/Card'
 
+
+
 const WorkoutItem = ({ workout, removeWorkout }) => {
     return (
       <Card className="text-center" border="info" >
-          <Card.Body>
+          <Card.Body >
             <Card.Title style={{fontSize: 20}}>Workout Name: {workout.name}</Card.Title>
               <Card.Text>
                 <br />
