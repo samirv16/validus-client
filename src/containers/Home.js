@@ -1,5 +1,4 @@
 import React from 'react'
-import Carousel from 'react-bootstrap/Carousel'
 
 
 class Home extends React.Component {
